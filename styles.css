@@ -1,19 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  background-color: #9de2d9;
+  gap: 5rem;
+  margin-top: 6rem;
+  font-family: "Roboto", sans-serif;
 }
 
 .sketchArea {
   display: flex;
   flex-wrap: wrap;
   background-color: white;
-  margin: 100px auto;
+  -webkit-box-shadow: 10px 10px 26px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 26px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 26px -10px rgba(0, 0, 0, 0.75);
 }
 
 .cells {
   border: 1px solid whitesmoke;
+}
+
+.head {
+  align-self: center;
+  border-bottom-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 1rem 2rem;
+  background-color: #228989;
+  color: #fbfbfb;
+  font-weight: bold;
+  font-size: 1.6em;
+  -webkit-box-shadow: 10px 10px 26px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 26px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 26px -10px rgba(0, 0, 0, 0.75);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+}
+
+button {
+  padding: 1em 0.9em;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fbfbfb;
+  background-color: #228989;
+  border: none;
+  border-radius: 16px;
+  -webkit-box-shadow: 10px 10px 26px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 26px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 26px -10px rgba(0, 0, 0, 0.75);
+}
+
+button:hover {
+  background-color: #2eadad;
+}
+
+button:active {
+  background-color: #228989;
 }
