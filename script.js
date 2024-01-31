@@ -21,10 +21,7 @@ reSize.addEventListener("click", () => {
 });
 
 const blackbtn = document.querySelector("#black");
-blackbtn.addEventListener("click", changeColor("black"));
-
 const rainbowbtn = document.querySelector("#rainbow");
-rainbowbtn.addEventListener("click", changeColor("random"));
 
 function createGridCells(squaresPerSide) {
   const numOfSquares = squaresPerSide * squaresPerSide;
@@ -48,14 +45,14 @@ function removeGridCells() {
   }
 }
 
+function changeColor(colorChoice) {
+  color = colorChoice;
+}
+
 function colorDiv() {
   if (color == "random") {
     this.style.backgroundColor = `hsl(${Math.random() * 360},100%,50%)`;
   } else {
     this.style.backgroundColor = "black";
   }
-}
-
-function changeColor(colorChoice) {
-  color = colorChoice;
 }
