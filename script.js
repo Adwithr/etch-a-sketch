@@ -20,9 +20,6 @@ reSize.addEventListener("click", () => {
   } else createGridCells(input);
 });
 
-const blackbtn = document.querySelector("#black");
-const rainbowbtn = document.querySelector("#rainbow");
-
 function createGridCells(squaresPerSide) {
   const numOfSquares = squaresPerSide * squaresPerSide;
   const btn = document.querySelector("#clear");

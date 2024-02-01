@@ -1,1 +1,1 @@
-odin project etch a sketch
+The Odin Project etch-a-sketch Project
